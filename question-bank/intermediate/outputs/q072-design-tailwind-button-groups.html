@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design Tailwind Button Groups</title>
+  <style>
+    *{box-sizing:border-box} body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;background:#f6f8fb;color:#111827;display:grid;place-items:center;padding:24px}
+    .stage{width:min(980px,100%);background:#fff;border:1px solid #dbe3ef;border-radius:14px;padding:28px;box-shadow:0 18px 45px rgba(15,23,42,.12)}
+    h1{margin:0 0 6px;font-size:26px} .meta{margin:0 0 8px;color:#0369a1;font-weight:800} .desc{margin:0 0 22px;color:#4b5563;line-height:1.55}
+    button{border:0;background:#0369a1;color:#fff;border-radius:8px;padding:10px 16px;font-weight:800} b{font-size:30px;color:#0369a1}
+    .dashboard{display:grid;grid-template-columns:180px 1fr;gap:16px} aside{background:#111827;color:#fff;border-radius:12px;padding:18px;line-height:2} main{display:grid;grid-template-columns:1fr 1fr;gap:14px} main div,.cards article,.form,.split>* ,.states,.timeline p,.tokens span,.tw{border:1px solid #dbe3ef;border-radius:12px;padding:18px;background:#f0f9ff} .wide{grid-column:1/-1;min-height:120px;display:grid;place-items:center}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px} .featured{outline:3px solid #0369a1}
+    .form{display:grid;gap:12px;max-width:430px} label{display:grid;gap:6px;font-weight:800} input{border:1px solid #cbd5e1;border-radius:8px;padding:10px}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:14px} figure{margin:0;display:grid;place-items:center;min-height:180px}
+    .states,.tokens,.tw div{display:flex;flex-wrap:wrap;gap:12px;align-items:center} .active{background:#111827} .danger{background:#be123c}
+    .timeline{display:grid;gap:12px;max-width:520px} .timeline p{margin:0;border-left:6px solid #0369a1;font-weight:800}
+    .modal-demo{position:relative;min-height:300px;border-radius:14px;overflow:hidden;background:#e2e8f0;display:grid;place-items:center} .overlay{position:absolute;inset:0;background:rgba(15,23,42,.55)} .modal{position:relative;background:#fff;border-radius:14px;padding:24px;box-shadow:0 22px 60px rgba(0,0,0,.28)}
+    .tokens span,.tw b{display:inline-flex;border:1px solid #0369a1;color:#0369a1;background:#fff;border-radius:999px;padding:8px 12px} .tw span{color:#0369a1;font-weight:900;text-transform:uppercase;font-size:12px}
+    @media(max-width:700px){.dashboard,.split,.cards{grid-template-columns:1fr} main{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <h1>Design Tailwind Button Groups</h1>
+    <p class="meta">Intermediate - Tailwind CSS</p>
+    <p class="desc">Solve the intermediate CSS challenge &#x27;Design Tailwind Button Groups&#x27; by styling the provided markup so the rendered page matches the linked sample output.</p>
+    <section class="tw"><span>Intermediate Tailwind</span><h2>Design Tailwind Button Groups</h2><div><b>md:grid</b><b>focus:ring</b><b>rounded-xl</b><b>shadow</b></div><button>Preview component</button></section>
+  </main>
+</body>
+</html>
