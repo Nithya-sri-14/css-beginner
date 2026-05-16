@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8. Tailwind Spacing System</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; font-family: Arial, Helvetica, sans-serif; background: #f6f8fb; color: #111827; display: grid; place-items: center; padding: 24px; }
+    .stage { width: min(940px, 100%); background: #fff; border: 1px solid #dbe3ef; border-radius: 14px; padding: 26px; box-shadow: 0 18px 45px rgba(15, 23, 42, .12); }
+    h1 { margin: 0 0 6px; font-size: 25px; }
+    .topic { margin: 0 0 8px; color: #0891b2; font-weight: 700; }
+    .desc { margin: 0 0 22px; color: #4b5563; line-height: 1.55; }
+    button { border: 0; background: #0891b2; color: white; border-radius: 8px; padding: 10px 16px; font-weight: 700; }
+    .card { max-width: 360px; border: 1px solid #d7dee8; border-radius: 12px; padding: 22px; background: #fff; }
+    .badge { display: inline-block; background: #0891b2; color: white; border-radius: 999px; padding: 5px 10px; font-size: 12px; }
+    .card h2 { margin: 16px 0 8px; }
+    .card p { line-height: 1.6; color: #4b5563; }
+    .navbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #111827; color: white; border-radius: 12px; padding: 16px 18px; }
+    .links { display: flex; gap: 18px; }
+    .links a { color: #dbeafe; }
+    .dashboard { display: grid; grid-template-columns: 180px 1fr; gap: 18px; }
+    aside { background: #111827; color: white; border-radius: 12px; padding: 18px; line-height: 2; }
+    section { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .metric { border: 1px solid #d7dee8; border-radius: 12px; padding: 18px; }
+    .metric span { display: block; color: #6b7280; }
+    .metric b { font-size: 34px; color: #0891b2; }
+    .chart { grid-column: 1 / -1; height: 150px; border-radius: 12px; background: linear-gradient(135deg, #0891b2, #dbeafe); }
+    .form { max-width: 380px; display: grid; gap: 14px; }
+    label { display: grid; gap: 6px; font-weight: 700; }
+    input { border: 1px solid #cbd5e1; border-radius: 8px; padding: 11px; font: inherit; }
+    input:focus { outline: 3px solid rgba(37, 99, 235, .22); border-color: #0891b2; }
+    .modal-demo { position: relative; min-height: 300px; display: grid; place-items: center; overflow: hidden; border-radius: 12px; }
+    .overlay { position: absolute; inset: 0; background: rgba(15, 23, 42, .55); }
+    .modal { position: relative; max-width: 360px; background: white; border-radius: 14px; padding: 24px; box-shadow: 0 22px 60px rgba(0, 0, 0, .3); animation: pop .25s ease; }
+    @keyframes pop { from { opacity: 0; transform: scale(.94); } to { opacity: 1; transform: scale(1); } }
+    .skeleton { width: min(360px, 100%); border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px; display: grid; gap: 12px; }
+    .skeleton div, .skeleton span { display: block; border-radius: 8px; background: linear-gradient(90deg, #e5e7eb, #f8fafc, #e5e7eb); background-size: 220% 100%; animation: load 1.2s infinite; height: 86px; }
+    .skeleton span { height: 18px; }
+    .skeleton .short { width: 65%; }
+    @keyframes load { to { background-position: -220% 0; } }
+    .footer { display: flex; align-items: center; justify-content: space-between; gap: 18px; background: #111827; color: white; border-radius: 12px; padding: 20px; }
+    .footer a { color: #dbeafe; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; }
+    .grid div { background: #eef6ff; border: 1px solid #bfdbfe; border-radius: 10px; min-height: 110px; display: grid; place-items: center; font-weight: 700; color: #1e3a8a; }
+    @media (max-width: 640px) { .navbar, .footer { align-items: flex-start; flex-direction: column; } .links { flex-direction: column; } .dashboard { grid-template-columns: 1fr; } section { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <h1>8. Tailwind Spacing System</h1>
+    <p class="topic">Tailwind CSS</p>
+    <p class="desc">Convert raw CSS spacing into Tailwind padding and margin utilities.</p>
+
+      <article class="card">
+        <span class="badge">Sample Output</span>
+        <h2>Course Card</h2>
+        <p>The component uses the expected CSS result for this beginner challenge.</p>
+        <button>View</button>
+      </article>
+  </main>
+</body>
+</html>
